@@ -34,6 +34,7 @@ namespace GalleriaVita
 			this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.hexInput1 = new GalleriaVita.HexInput();
 			this.inputNum1 = new GalleriaVita.InputNum();
 			this.adrCO = new GalleriaVita.AdrValue();
 			this.adrRF = new GalleriaVita.AdrValue();
@@ -82,6 +83,18 @@ namespace GalleriaVita
 			this.aboutToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
 			this.aboutToolStripMenuItem.Text = "バージョン情報の表示";
 			this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+			// 
+			// hexInput1
+			// 
+			this.hexInput1.BackColor = System.Drawing.SystemColors.Control;
+			this.hexInput1.Checked = false;
+			this.hexInput1.IsHex = true;
+			this.hexInput1.Location = new System.Drawing.Point(25, 371);
+			this.hexInput1.Name = "hexInput1";
+			this.hexInput1.Size = new System.Drawing.Size(225, 64);
+			this.hexInput1.TabIndex = 7;
+			this.hexInput1.Text = "hexInput1";
+			this.hexInput1.Value = ((long)(64));
 			// 
 			// inputNum1
 			// 
@@ -164,6 +177,7 @@ namespace GalleriaVita
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(615, 459);
+			this.Controls.Add(this.hexInput1);
 			this.Controls.Add(this.inputNum1);
 			this.Controls.Add(this.adrCO);
 			this.Controls.Add(this.adrRF);
@@ -197,6 +211,7 @@ namespace GalleriaVita
 		private AdrValue adrRF;
 		private AdrValue adrCO;
 		private InputNum inputNum1;
+		private HexInput hexInput1;
 	}
 }
 

@@ -103,12 +103,21 @@
     <Compile Include="AppInfoDialog.Designer.cs">
       <DependentUpon>AppInfoDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hex_input_CB.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DynamicJson.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HexInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Hex_input_Disp.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="InputNum.cs">
       <SubType>UserControl</SubType>
