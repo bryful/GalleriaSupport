@@ -103,6 +103,9 @@
     <Compile Include="AppInfoDialog.Designer.cs">
       <DependentUpon>AppInfoDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hex_input_Btn.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Hex_input_CB.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -116,6 +119,7 @@
     <Compile Include="HexInput.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Hex_input_def.cs" />
     <Compile Include="Hex_input_Disp.cs">
       <SubType>Component</SubType>
     </Compile>

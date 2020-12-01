@@ -56,7 +56,7 @@ namespace GalleriaVita
 			// b7
 			// 
 			this.b7.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.b7.Location = new System.Drawing.Point(3, 186);
+			this.b7.Location = new System.Drawing.Point(3, 125);
 			this.b7.Name = "b7";
 			this.b7.Size = new System.Drawing.Size(75, 55);
 			this.b7.TabIndex = 7;
@@ -67,7 +67,7 @@ namespace GalleriaVita
 			// b6
 			// 
 			this.b6.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.b6.Location = new System.Drawing.Point(165, 247);
+			this.b6.Location = new System.Drawing.Point(165, 186);
 			this.b6.Name = "b6";
 			this.b6.Size = new System.Drawing.Size(75, 55);
 			this.b6.TabIndex = 6;
@@ -78,7 +78,7 @@ namespace GalleriaVita
 			// b5
 			// 
 			this.b5.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.b5.Location = new System.Drawing.Point(84, 247);
+			this.b5.Location = new System.Drawing.Point(84, 186);
 			this.b5.Name = "b5";
 			this.b5.Size = new System.Drawing.Size(75, 55);
 			this.b5.TabIndex = 5;
@@ -89,7 +89,7 @@ namespace GalleriaVita
 			// b8
 			// 
 			this.b8.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.b8.Location = new System.Drawing.Point(84, 186);
+			this.b8.Location = new System.Drawing.Point(84, 125);
 			this.b8.Name = "b8";
 			this.b8.Size = new System.Drawing.Size(75, 55);
 			this.b8.TabIndex = 8;
@@ -100,7 +100,7 @@ namespace GalleriaVita
 			// b9
 			// 
 			this.b9.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.b9.Location = new System.Drawing.Point(165, 186);
+			this.b9.Location = new System.Drawing.Point(165, 125);
 			this.b9.Name = "b9";
 			this.b9.Size = new System.Drawing.Size(75, 55);
 			this.b9.TabIndex = 9;
@@ -111,7 +111,7 @@ namespace GalleriaVita
 			// b4
 			// 
 			this.b4.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.b4.Location = new System.Drawing.Point(3, 247);
+			this.b4.Location = new System.Drawing.Point(3, 186);
 			this.b4.Name = "b4";
 			this.b4.Size = new System.Drawing.Size(75, 55);
 			this.b4.TabIndex = 4;
@@ -122,7 +122,7 @@ namespace GalleriaVita
 			// b1
 			// 
 			this.b1.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.b1.Location = new System.Drawing.Point(3, 308);
+			this.b1.Location = new System.Drawing.Point(3, 247);
 			this.b1.Name = "b1";
 			this.b1.Size = new System.Drawing.Size(75, 55);
 			this.b1.TabIndex = 1;
@@ -133,7 +133,7 @@ namespace GalleriaVita
 			// b2
 			// 
 			this.b2.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.b2.Location = new System.Drawing.Point(84, 308);
+			this.b2.Location = new System.Drawing.Point(84, 247);
 			this.b2.Name = "b2";
 			this.b2.Size = new System.Drawing.Size(75, 55);
 			this.b2.TabIndex = 2;
@@ -144,7 +144,7 @@ namespace GalleriaVita
 			// b3
 			// 
 			this.b3.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.b3.Location = new System.Drawing.Point(165, 308);
+			this.b3.Location = new System.Drawing.Point(165, 247);
 			this.b3.Name = "b3";
 			this.b3.Size = new System.Drawing.Size(75, 55);
 			this.b3.TabIndex = 3;
@@ -155,7 +155,7 @@ namespace GalleriaVita
 			// b0
 			// 
 			this.b0.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.b0.Location = new System.Drawing.Point(3, 369);
+			this.b0.Location = new System.Drawing.Point(3, 308);
 			this.b0.Name = "b0";
 			this.b0.Size = new System.Drawing.Size(75, 55);
 			this.b0.TabIndex = 0;
@@ -166,7 +166,7 @@ namespace GalleriaVita
 			// bA
 			// 
 			this.bA.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.bA.Location = new System.Drawing.Point(3, 125);
+			this.bA.Location = new System.Drawing.Point(3, 64);
 			this.bA.Name = "bA";
 			this.bA.Size = new System.Drawing.Size(75, 55);
 			this.bA.TabIndex = 10;
@@ -177,7 +177,7 @@ namespace GalleriaVita
 			// bB
 			// 
 			this.bB.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.bB.Location = new System.Drawing.Point(84, 125);
+			this.bB.Location = new System.Drawing.Point(84, 64);
 			this.bB.Name = "bB";
 			this.bB.Size = new System.Drawing.Size(75, 55);
 			this.bB.TabIndex = 11;
@@ -188,7 +188,7 @@ namespace GalleriaVita
 			// bC
 			// 
 			this.bC.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.bC.Location = new System.Drawing.Point(165, 125);
+			this.bC.Location = new System.Drawing.Point(165, 64);
 			this.bC.Name = "bC";
 			this.bC.Size = new System.Drawing.Size(75, 55);
 			this.bC.TabIndex = 12;
@@ -199,7 +199,7 @@ namespace GalleriaVita
 			// bD
 			// 
 			this.bD.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.bD.Location = new System.Drawing.Point(3, 64);
+			this.bD.Location = new System.Drawing.Point(3, 3);
 			this.bD.Name = "bD";
 			this.bD.Size = new System.Drawing.Size(75, 55);
 			this.bD.TabIndex = 13;
@@ -210,7 +210,7 @@ namespace GalleriaVita
 			// bE
 			// 
 			this.bE.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.bE.Location = new System.Drawing.Point(84, 64);
+			this.bE.Location = new System.Drawing.Point(84, 3);
 			this.bE.Name = "bE";
 			this.bE.Size = new System.Drawing.Size(75, 55);
 			this.bE.TabIndex = 14;
@@ -221,7 +221,7 @@ namespace GalleriaVita
 			// bF
 			// 
 			this.bF.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.bF.Location = new System.Drawing.Point(165, 64);
+			this.bF.Location = new System.Drawing.Point(165, 3);
 			this.bF.Name = "bF";
 			this.bF.Size = new System.Drawing.Size(75, 55);
 			this.bF.TabIndex = 15;
@@ -232,9 +232,9 @@ namespace GalleriaVita
 			// bCL
 			// 
 			this.bCL.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.bCL.Location = new System.Drawing.Point(3, 3);
+			this.bCL.Location = new System.Drawing.Point(246, 3);
 			this.bCL.Name = "bCL";
-			this.bCL.Size = new System.Drawing.Size(156, 55);
+			this.bCL.Size = new System.Drawing.Size(75, 55);
 			this.bCL.TabIndex = 20;
 			this.bCL.Text = "CL";
 			this.bCL.UseVisualStyleBackColor = true;
@@ -243,9 +243,9 @@ namespace GalleriaVita
 			// bBS
 			// 
 			this.bBS.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.bBS.Location = new System.Drawing.Point(165, 3);
+			this.bBS.Location = new System.Drawing.Point(246, 64);
 			this.bBS.Name = "bBS";
-			this.bBS.Size = new System.Drawing.Size(176, 55);
+			this.bBS.Size = new System.Drawing.Size(75, 55);
 			this.bBS.TabIndex = 21;
 			this.bBS.Text = "BS";
 			this.bBS.UseVisualStyleBackColor = true;
@@ -254,9 +254,9 @@ namespace GalleriaVita
 			// bPluss
 			// 
 			this.bPluss.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.bPluss.Location = new System.Drawing.Point(246, 64);
+			this.bPluss.Location = new System.Drawing.Point(246, 186);
 			this.bPluss.Name = "bPluss";
-			this.bPluss.Size = new System.Drawing.Size(95, 55);
+			this.bPluss.Size = new System.Drawing.Size(75, 55);
 			this.bPluss.TabIndex = 16;
 			this.bPluss.Text = "+1";
 			this.bPluss.UseVisualStyleBackColor = true;
@@ -265,9 +265,9 @@ namespace GalleriaVita
 			// bMinus
 			// 
 			this.bMinus.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.bMinus.Location = new System.Drawing.Point(246, 247);
+			this.bMinus.Location = new System.Drawing.Point(246, 249);
 			this.bMinus.Name = "bMinus";
-			this.bMinus.Size = new System.Drawing.Size(95, 55);
+			this.bMinus.Size = new System.Drawing.Size(75, 55);
 			this.bMinus.TabIndex = 18;
 			this.bMinus.Text = "-1";
 			this.bMinus.UseVisualStyleBackColor = true;
@@ -276,9 +276,9 @@ namespace GalleriaVita
 			// b10Minus
 			// 
 			this.b10Minus.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.b10Minus.Location = new System.Drawing.Point(246, 308);
+			this.b10Minus.Location = new System.Drawing.Point(246, 310);
 			this.b10Minus.Name = "b10Minus";
-			this.b10Minus.Size = new System.Drawing.Size(95, 55);
+			this.b10Minus.Size = new System.Drawing.Size(75, 55);
 			this.b10Minus.TabIndex = 19;
 			this.b10Minus.Text = "-10";
 			this.b10Minus.UseVisualStyleBackColor = true;
@@ -289,7 +289,7 @@ namespace GalleriaVita
 			this.b10Pluss.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
 			this.b10Pluss.Location = new System.Drawing.Point(246, 125);
 			this.b10Pluss.Name = "b10Pluss";
-			this.b10Pluss.Size = new System.Drawing.Size(95, 55);
+			this.b10Pluss.Size = new System.Drawing.Size(75, 55);
 			this.b10Pluss.TabIndex = 17;
 			this.b10Pluss.Text = "+10";
 			this.b10Pluss.UseVisualStyleBackColor = true;
@@ -322,7 +322,8 @@ namespace GalleriaVita
 			this.Controls.Add(this.b6);
 			this.Controls.Add(this.b7);
 			this.Name = "InputNum";
-			this.Size = new System.Drawing.Size(344, 426);
+			this.Size = new System.Drawing.Size(328, 366);
+			this.Load += new System.EventHandler(this.InputNum_Load);
 			this.ResumeLayout(false);
 
 		}

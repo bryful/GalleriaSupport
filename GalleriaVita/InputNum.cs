@@ -10,32 +10,7 @@ using System.Windows.Forms;
 
 namespace GalleriaVita
 {
-	public enum IN_MODE
-	{
-		n0 = 0,
-		n1,
-		n2,
-		n3,
-		n4,
-		n5,
-		n6,
-		n7,
-		n8,
-		n9,
-		nA,
-		nB,
-		nC,
-		nD,
-		nE,
-		nF,
-		nP1,
-		nP10,
-		nM1,
-		nM10,
-		nCL,
-		nBS,
-		COUNT,
-	}
+
 	public partial class InputNum : UserControl
 	{
 
@@ -96,6 +71,11 @@ namespace GalleriaVita
 			ModeEventArgs ma = new ModeEventArgs();
 			ma.Mode = m;
 			OnMode(ma);
+		}
+
+		private void InputNum_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
