@@ -10,6 +10,16 @@ vitacheat‚ÅƒŠ[ƒ“ƒtƒH[ƒX‚ÌƒAƒhƒŒƒX‚ğ’²‚×‚½Œã‚ÉA‘¼‚Ì€–Ú‚ÌƒAƒhƒŒƒX‚ğŒYŒvZ‚µ‚Ä‚
 ƒ^ƒuƒŒƒbƒg‚©‚çgoogleƒŠƒ‚[ƒg‚ÅPC‚ğ‘€ì‚µ‚Äg‚¤‚½‚ß‚Éì‚è‚Ü‚µ‚½B  
 ‚Ù‚ñ‚Æ‚ÍWebƒAƒvƒŠ‚Æ‚©‚Åì‚è‚½‚©‚Á‚½B  
   
+## GalleriaVitaWeb
+
+GalleriaVita.exe‚ğJavaScript‚ÅWebƒAƒvƒŠ‚Åì‚è‚Ü‚µ‚½B  
+04WebServer‚ÅƒT[ƒo[—§‚¿ã‚°‚ÄŠm”F‚µ‚Ü‚µ‚½B
+
+## FindFolder
+WebƒAƒvƒŠ‚ÌŒŸØ‚ğs‚¤‚½‚ß‚Éì‚Á‚½‚à‚Ì‚Å‚·B  
+C#‚É‚æ‚éCGI‚ÌƒTƒ“ƒvƒ‹‚Å‚·B  
+‘S‘RƒKƒŒƒŠƒA‚ÆŠÖŒW‚È‚¢‚Å‚·‚ÈB  
+  
 
 ## Dependency
 Visual studio 2019 C#
