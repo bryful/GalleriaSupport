@@ -10,10 +10,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Web;
 
+using Codeplex.Data; // DynamicJson はこれ。
+using System.Diagnostics; // Trace とかこれ。
+
 namespace FindFolder
 {
 	class Program
 	{
+		static string targetDirDB = @" \\192.168.10.88\sv04\pool\sec\comic\FindFolder.json";
 
 		static string [] targetDirs = new string[]{
 		@" \\192.168.10.88\sv04\pool\sec\comic\00",
@@ -42,6 +46,41 @@ namespace FindFolder
 
 			}
 		}
+		static bool FindFolderNameDB(ref List<DirectoryInfo> lst, string TargetName)
+		{
+			bool ret = false;
+
+			if (File.Exists(targetDirDB) == false) return ret;
+
+			string pad = Path.GetDirectoryName(targetDirDB);
+
+			string js = File.ReadAllText(targetDirDB, Encoding.GetEncoding("utf-8"));
+
+			var json = DynamicJson.Parse(js);
+
+			if ( json.IsDefined("Data") ==true)
+			{
+				string[] sa = json.Data;
+				if(sa.Length>0)
+				{
+					int cnt = 0;
+					string tn = TargetName.ToLower();
+					foreach(string s in sa)
+					{
+						if( s.ToLower().IndexOf(tn)>=0)
+						{
+							lst.Add( new DirectoryInfo(Path.Combine(pad,s))  );
+							cnt++;
+						}
+					}
+					ret = (cnt > 0);
+				}
+
+			}
+
+			return ret;
+
+		}
 		static void Main(string[] args)
 		{
 
@@ -59,8 +98,11 @@ namespace FindFolder
 			if (cu.Data.FindValueFromTag("folder",out TargetName))
             {
 				List<DirectoryInfo> lst = new List<DirectoryInfo>();
-				FindFolderName(ref lst, TargetName);
-
+				
+				if (FindFolderNameDB(ref lst, TargetName) ==false)
+				{
+					FindFolderName(ref lst, TargetName);
+				}
 				if (lst.Count > 0)
 				{
 					foreach (DirectoryInfo d in lst)
