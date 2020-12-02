@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
+using System.Windows.Forms;
 using System.Web;
 
 namespace FindFolder
 {
 	class Program
 	{
-		static string  header = "Content-type: text/html\n\n";
 
 		static string [] targetDirs = new string[]{
 		@" \\192.168.10.88\sv04\pool\sec\comic\00",
@@ -41,97 +44,57 @@ namespace FindFolder
 		}
 		static void Main(string[] args)
 		{
-			
 
-			string REQUEST_METHOD  = System.Environment.GetEnvironmentVariable("REQUEST_METHOD");
-			bool IsGET = (REQUEST_METHOD == "GET");
-			bool IsPOST = (REQUEST_METHOD == "POST");
+			CgiUtil cu = new CgiUtil(args);
+			string TargetName = "";
 
-			string getStr = "";
-
-			if(IsGET)
-			{
-				getStr = Environment.GetEnvironmentVariable("QUERY_STRING");
-
-			}
-			else if(IsPOST)
-			{
-				int CL = int.Parse(System.Environment.GetEnvironmentVariable("CONTENT_LENGTH"));
-				if (CL > 0)
-				{
-					Stream inputStream = Console.OpenStandardInput();
-					byte[] bytes = new byte[CL];
-					int outputLength = inputStream.Read(bytes, 0, CL);
-					char[] chars = Encoding.UTF7.GetChars(bytes, 0, outputLength);
-					getStr = new string(chars);
-				}
-
-			}
-			else
-			{
-
-			}
-			string tname = "";
 			string dirList = "";
 
-			if (getStr != "")
-			{
+			if (cu.CheckLockFile("FindFolder") == false)
+            {
+				cu.WriteErr();
+				return;
+            }
 
-				getStr = HttpUtility.UrlDecode(getStr);
+			if (cu.Data.FindValueFromTag("folder",out TargetName))
+            {
+				List<DirectoryInfo> lst = new List<DirectoryInfo>();
+				FindFolderName(ref lst, TargetName);
 
-				string tn = "";
-				string[] prms = new string[0];
-				try
+				if (lst.Count > 0)
 				{
-					prms = getStr.Split('=');
-				}
-				catch
-				{
-
-				}
-				if (prms.Length>=2)
-				{
-					if(prms[0]== "folder")
+					foreach (DirectoryInfo d in lst)
 					{
-						tn = prms[1];
+						dirList += "<li>" + d.Parent.Name + "/" + d.Name + "</li>\r\n";
 					}
 				}
-				tname = tn;
-				if (tn != "")
+				else
 				{
-					List<DirectoryInfo> lst = new List<DirectoryInfo>();
-					FindFolderName(ref lst, tn);
-
-					if (lst.Count > 0)
-					{
-						foreach (DirectoryInfo d in lst)
-						{
-							dirList += "<li>" + d.Parent.Name+"/"+ d.Name + "</li>\r\n";
-						}
-					}
-					else
-					{
-						dirList += "<li>none</li>\r\n";
-					}
+					dirList += "<li>None</li>\r\n";
 				}
-
-
 			}
-			dirList = "<ul>\r\n" + dirList + "</ul>\r\n";
-
+			dirList = "<ul class=\"big\">\r\n" + dirList + "</ul>\r\n";
+			
 			FileInfo fi = new FileInfo(".\\body.html");
 
 			string html = "$FolderPath";
 			if (fi.Exists == true)
 			{
 				html = File.ReadAllText(fi.FullName, Encoding.GetEncoding("utf-8"));
+            }
+            else
+            {
+				html = Properties.Resources.baseHtml;
+
 			}
 			html = html.Replace("$FolderPath", dirList);
-			html = html.Replace("$TargetName", tname);
+			html = html.Replace("$TargetName", TargetName);
+			//html = html.Replace("$QUERY_STRING", "QUERY_STRING:" + cu.QUERY_STRING);
+			//html = html.Replace("$PATH_INFO", "PATH_INFO:" + cu.PATH_INFO);
 
-			Console.OutputEncoding = new UTF8Encoding();
-			Console.WriteLine(header);
-			Console.WriteLine(html);
+			cu.WriteHtml(html);
+
+			cu.CloseLockFile();
 		}
 	}
 }
